@@ -18,8 +18,8 @@ function App(props) {
   return (
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
       <h3>email: {loggedInUser.email}</h3>
-      <Header></Header>
       <Router>
+        <Header></Header>
         <Switch>
           <Route path='/shop'>
             <Shop></Shop>
